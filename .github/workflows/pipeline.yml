@@ -24,7 +24,7 @@ jobs:
       - name: Configurer les identifiants AWS via OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::<ACCOUNT>:role/petclinic-ci
+          role-to-assume: arn:aws:iam::619634437028:role/petclinic-ci
           aws-region: ${{ env.AWS_REGION }}
 
       # --- ÉTAPE 1 : Build, tests unitaires ---
