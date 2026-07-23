@@ -40,7 +40,7 @@ jobs:
 
       # --- ÉTAPE 2 : Qualité & sécurité (tfsec, Sonar, Trivy) ---
       - name: Scan IaC avec tfsec
-        uses: aquasecurity/tfsec-action@v1
+        uses: aquasecurity/tfsec-action@v1.0.3
         with:
           working_directory: terraform
 
